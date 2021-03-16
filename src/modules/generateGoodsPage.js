@@ -20,8 +20,6 @@ const generateGoodsPage = () => {
 
         data.forEach(item => {
 
-            console.log(item);
-
             const {category, count, description, id, img, name:itemName, price, subcategory} = item;
             goodsList.insertAdjacentHTML('afterbegin', `
                 <li class="goods-list__item">
@@ -54,7 +52,7 @@ const generateGoodsPage = () => {
             const btnAddCard = e.target.closest('.btn-add-card');
             if(btnAddCard){
                 e.preventDefault();
-                userData.cartListData = btnAddCard.dataset.idd;
+                userData.cartList = btnAddCard.dataset.idd;
             }
         })
     }

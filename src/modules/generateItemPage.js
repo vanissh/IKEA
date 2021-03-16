@@ -61,10 +61,11 @@ const generateItemPage = () => {
             checkWishList();
         });
 
-        btnAddWishList.addEventListener('click', () => {
+        btnGood.addEventListener('click', () => {
             userData.cartList = id;
-            checkWishList();
         });
+        
+        checkWishList();
 
     }
 

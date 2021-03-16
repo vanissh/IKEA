@@ -29,11 +29,7 @@ const generateSubCatalog = () => {
                ${listHTML}
             </ul>
         `;
-
-        console.log(header);
-        console.log(listHTML);
         
-
         subCatalog.insertAdjacentHTML('afterbegin', subCatalogHTML);
         
     };
